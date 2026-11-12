@@ -1,0 +1,50 @@
+:root{--ink:#1c1e28;--bg:#f6f3ee;--brass:#a8844b;--mint:#9cc7b5;--wood:#7a5238;--line:#ded8cc;--mut:#625f58}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:"Manrope",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:16.5px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1}
+header{position:sticky;top:0;z-index:10;background:rgba(246,243,238,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+header img{height:50px;display:block}
+nav{display:flex;gap:28px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+nav a{text-decoration:none}nav a:hover{color:var(--brass)}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:14px 28px;font-size:14px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--ink)}
+.btn:hover{background:var(--brass);border-color:var(--brass)}
+.btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}.btn.o:hover{background:#fff;color:var(--ink)}
+.hero{min-height:620px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(28,30,40,.88) 0%,rgba(28,30,40,.55) 55%,rgba(28,30,40,.15)),url(images/salon.jpg) center/cover;color:#fff}
+.hero h1{font-size:clamp(46px,7vw,86px);margin-bottom:16px}
+.hero p{max-width:30em;font-size:18px;margin-bottom:28px;color:#eee}
+.k{color:var(--brass);font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;margin-bottom:14px}
+.hero .k{color:var(--mint)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:84px 0}
+h2{font-size:clamp(32px,4.4vw,48px);margin-bottom:18px}
+.two{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.two img{width:100%;display:block}
+.treat{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:36px;border-top:1px solid var(--line)}
+.treat div{padding:26px 26px 26px 0;border-bottom:1px solid var(--line)}
+.treat h3{font-size:26px;margin-bottom:6px}
+.treat p{font-size:15.5px;color:var(--mut)}
+.dark{background:var(--ink);color:#e9e6df}
+.dark h2,.dark h3{color:#fff}
+.hours{width:100%;border-collapse:collapse;margin:10px 0 22px}
+.hours td{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--mint)}
+.big{font-family:"Cormorant Garamond",serif;font-size:38px;text-decoration:none;display:block;margin:2px 0 6px;color:#fff}
+.dark a{color:#fff}
+.dark .btn{background:var(--brass);border-color:var(--brass)}.dark .btn:hover{background:#fff;color:var(--ink)}
+.band{width:100%;height:340px;object-fit:cover;display:block}
+footer{background:#101219;color:#8e8d8a;font-size:13px;text-align:center;padding:18px}
+footer a{color:#c9c7c1}
+.callbar{display:none}
+@media(max-width:860px){
+ nav{display:none}.two{grid-template-columns:1fr;gap:30px}.two img{max-height:480px;object-fit:cover;object-position:top}
+ .treat{grid-template-columns:1fr}.hero{min-height:540px;background-position:30% center}section{padding:56px 0}.band{height:200px}
+ .callbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20}
+ .callbar a{flex:1;text-align:center;padding:14px;text-decoration:none;background:var(--ink);color:#fff;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+ .callbar a+a{background:var(--brass)}
+ body{padding-bottom:50px}
+}
