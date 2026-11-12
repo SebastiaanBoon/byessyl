@@ -7,7 +7,7 @@ a{color:inherit}
 h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1}
 header{position:sticky;top:0;z-index:10;background:rgba(246,243,238,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
-header img{height:50px;display:block}
+header img{height:58px;display:block}
 nav{display:flex;gap:28px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
 nav a{text-decoration:none}nav a:hover{color:var(--brass)}
 .btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:14px 28px;font-size:14px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--ink)}
@@ -41,7 +41,7 @@ footer{background:#101219;color:#8e8d8a;font-size:13px;text-align:center;padding
 footer a{color:#c9c7c1}
 .callbar{display:none}
 @media(max-width:860px){
- nav{display:none}.two{grid-template-columns:1fr;gap:30px}.two img{max-height:480px;object-fit:cover;object-position:top}
+ nav{display:none}.two{grid-template-columns:1fr !important;gap:30px}.two img{max-height:480px;object-fit:cover;object-position:top}
  .treat{grid-template-columns:1fr}.hero{min-height:540px;background-position:30% center}section{padding:56px 0}.band{height:200px}
  .callbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20}
  .callbar a{flex:1;text-align:center;padding:14px;text-decoration:none;background:var(--ink);color:#fff;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
